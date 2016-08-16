@@ -48,7 +48,7 @@ body {
 }
 
 .menu > ul > li:nth-child(3) {
-    padding: 10px 64px 0 53px;
+    padding: 10px 64px 11px 53px;
 }
 
 .menu > ul > li:nth-child(4) {
@@ -59,7 +59,26 @@ body {
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
     background: #353535;
+    cursor: pointer;
+}
 
+.menu > ul > li:nth-child(1):hover {
+    padding: 11px 71px 11px 24px;
+    cursor: pointer;
+}
+
+.menu > ul > li:nth-child(2):hover {
+    padding: 10px 29px 11px 12px;
+    cursor: pointer;
+}
+
+.menu > ul > li:nth-child(3):hover {
+    padding: 10px 63px 11px 52px;
+    cursor: pointer;
+}
+
+.menu > ul > li:nth-child(4):hover {
+    padding: 10px 29px 11px 19px;
 }
 
 .sidebar {
@@ -113,6 +132,27 @@ body {
     padding-left: 34px;
     background: #f9f9f9;
     color: #2c2c2c;
+}
+
+.sidebar > ul > li:nth-child(1):hover,
+.sidebar > ul > li:nth-child(2):hover {
+    padding: 9px 0 11px 34px;
+}
+
+.sidebar > ul > li:nth-child(3):hover {
+    padding: 9px 0 12px 34px;
+}
+
+.sidebar > ul > li:nth-child(4):hover {
+    padding: 9px 0 11px 34px;
+}
+
+.sidebar > ul > li:nth-child(5):hover {
+    padding: 9px 0 14px 34px;
+}
+
+.sidebar > ul > li:nth-child(6):hover {
+    padding: 9px 0 12px 34px;
 }
 
 .content {
@@ -197,7 +237,11 @@ body {
 
 .footer > ul >li:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
+.footer > ul >li:nth-child(5):hover {
+    text-decoration: none;
+}
 
 
