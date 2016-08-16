@@ -132,6 +132,7 @@ body {
     padding-left: 34px;
     background: #f9f9f9;
     color: #2c2c2c;
+    cursor: pointer;
 }
 
 .sidebar > ul > li:nth-child(1):hover,
@@ -242,6 +243,7 @@ body {
 
 .footer > ul >li:nth-child(5):hover {
     text-decoration: none;
+    cursor: default;
 }
 
 
