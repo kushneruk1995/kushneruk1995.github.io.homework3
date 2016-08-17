@@ -9,9 +9,7 @@ body {
 
 .container {
     width: 1061px;
-    height: auto;
-    margin-right: 60px;
-    margin-left: 151px;
+    margin: 0 auto;
     padding-bottom: 60px;
     border-right: 2px solid #dbdbdb;
     border-left: 2px solid #dbdbdb;
@@ -19,14 +17,11 @@ body {
 }
 
 .logo img {
-    padding: 50px;
-    padding-bottom: 36px;
-    padding-left: 46px;
+    padding: 50px 50px 36px 46px;
 }
 
 .menu {
     width: 966px;
-    height: auto;
     margin: 0 auto;
     background: #535252;
 }
@@ -51,19 +46,7 @@ body {
     text-decoration: none;
 }
 
-.navigation > li:nth-child(1)>a {
-    padding: 11px 72px 11px 25px;
-}
-
-.navigation > li:nth-child(2)>a {
-    padding: 10px 30px 11px 13px;
-}
-
-.navigation > li:nth-child(3)>a {
-    padding: 10px 64px 11px 53px;
-}
-
-.navigation > li:nth-child(4)>a {
+.navigation > li>a {
     padding: 10px 30px 11px 20px;
 }
 
@@ -74,28 +57,18 @@ body {
     cursor: pointer;
 }
 
-.navigation > li:nth-child(1)>a:hover {
-    padding: 11px 71px 11px 24px;
-    cursor: pointer;
-}
-
-.navigation > li:nth-child(2)>a:hover {
-    padding: 10px 29px 11px 12px;
-    cursor: pointer;
-}
-
-.navigation > li:nth-child(3)>a:hover {
-    padding: 10px 63px 11px 52px;
-    cursor: pointer;
-}
-
-.navigation > li:nth-child(4)>a:hover {
+.navigation > li>a:hover {
     padding: 10px 29px 11px 19px;
+    cursor: pointer;
+}
+
+.navigation > li>a:hover {
+    padding: 10px 29px 11px 19px;
+    cursor: pointer;
 }
 
 .sidebar {
     width: 240px;
-    height: auto;
     margin-top: 40px;
     margin-left: 47px;
     float: left;
@@ -178,7 +151,6 @@ body {
 
 .content {
     width: 720px;
-    height: auto;
     margin: 40px 50px 10px 0;
     float: right;
 }
@@ -198,7 +170,6 @@ body {
 
 .content .info {
     width: 720px;
-    height: auto;
     margin-left: 0;
     color: #2c2c2c;
     font-family: Open Sans;
@@ -214,7 +185,6 @@ body {
 
 .footer {
     width: 966px;
-    height: auto;
     margin: 0 auto;
     margin-top: 190px;
     clear: both;
@@ -240,19 +210,7 @@ body {
     text-decoration: none;
 }
 
-.navigation-bottom > li:nth-child(1)>a {
-    padding: 9px 72px 11px 24px;
-}
-
-.navigation-bottom > li:nth-child(2)>a {
-    padding: 9px 30px 11px 15px;
-}
-
-.navigation-bottom > li:nth-child(3)>a {
-    padding: 9px 64px 11px 60px;
-}
-
-.navigation-bottom > li:nth-child(4)>a {
+.navigation-bottom > li>a {
     padding: 9px 30px 11px 26px;
 }
 
@@ -270,7 +228,6 @@ body {
     font-size: 13px;
     list-style: none;
 }
-
 
 
 
