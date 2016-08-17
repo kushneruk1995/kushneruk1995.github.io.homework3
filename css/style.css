@@ -2,6 +2,11 @@ body {
     background: #f9f9f9;
 }
 
+@font-face {
+    font-family: Open Sans; /* Гарнитура шрифта */
+    src: url('../fonts/Open-Sans.ttf');/* Путь к файлу со шрифтом */
+}
+
 .container {
     width: 1061px;
     height: auto;
@@ -26,58 +31,65 @@ body {
     background: #535252;
 }
 
-.menu > ul {
+.navigation {
     margin: 0;
     padding: 0;
 }
 
-.menu > ul > li {
+.navigation > li {
     display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation > li>a {
+    display: block;
     color: #fff;
     font-family: Open Sans;
     font-size: 14px;
     list-style: none;
+    text-decoration: none;
 }
 
-.menu > ul > li:nth-child(1) {
+.navigation > li:nth-child(1)>a {
     padding: 11px 72px 11px 25px;
 }
 
-.menu > ul > li:nth-child(2) {
+.navigation > li:nth-child(2)>a {
     padding: 10px 30px 11px 13px;
 }
 
-.menu > ul > li:nth-child(3) {
+.navigation > li:nth-child(3)>a {
     padding: 10px 64px 11px 53px;
 }
 
-.menu > ul > li:nth-child(4) {
+.navigation > li:nth-child(4)>a {
     padding: 10px 30px 11px 20px;
 }
 
-.menu > ul >li:hover {
+.navigation>li>a:hover {
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
     background: #353535;
     cursor: pointer;
 }
 
-.menu > ul > li:nth-child(1):hover {
+.navigation > li:nth-child(1)>a:hover {
     padding: 11px 71px 11px 24px;
     cursor: pointer;
 }
 
-.menu > ul > li:nth-child(2):hover {
+.navigation > li:nth-child(2)>a:hover {
     padding: 10px 29px 11px 12px;
     cursor: pointer;
 }
 
-.menu > ul > li:nth-child(3):hover {
+.navigation > li:nth-child(3)>a:hover {
     padding: 10px 63px 11px 52px;
     cursor: pointer;
 }
 
-.menu > ul > li:nth-child(4):hover {
+.navigation > li:nth-child(4)>a:hover {
     padding: 10px 29px 11px 19px;
 }
 
@@ -89,70 +101,78 @@ body {
     float: left;
 }
 
-.sidebar > ul {
+.left-menu {
     margin: 0;
     padding: 0;
 }
 
-.sidebar > ul > li {
-    padding: 11px 0 9px 23px;
+.left-menu > li {
+    display: block;
+    margin: 0;
+    padding: 0;
     border-top: 1px solid #c8c8c8;
     border-right: 1px solid #c8c8c8;
     border-left: 1px solid #c8c8c8;
+}
+
+.left-menu > li >a {
+    display: block;
+    padding: 11px 0 9px 23px;
     color: #656363;
     font-family: Open Sans;
     font-size: 13.33px;
     list-style: none;
+    text-decoration: none;
 }
 
-.sidebar > ul > li:nth-child(3) {
+.left-menu > li:nth-child(3)>a {
     padding-bottom: 10px;
 }
 
-.sidebar > ul > li:nth-child(4) {
+.left-menu > li:nth-child(4)>a {
     padding-top: 9px;
     padding-bottom: 11px;
     padding-left: 22px;
 }
 
-.sidebar > ul > li:nth-child(5) {
+.left-menu > li:nth-child(5)>a {
     padding-bottom: 12px;
     padding-left: 22px;
 }
 
-.sidebar > ul > li:nth-child(6) {
+.left-menu > li:nth-child(6)>a {
     padding-top: 9px;
     padding-bottom: 12px;
     padding-left: 22px;
     border-bottom: 1px solid #c8c8c8;
 }
 
-.sidebar>ul>li:hover {
+.left-menu >li>a:hover {
     padding-top: 9px;
-    padding-left: 34px;
+    padding-left: 23px;
     background: #f9f9f9;
     color: #2c2c2c;
     cursor: pointer;
 }
 
-.sidebar > ul > li:nth-child(1):hover,
-.sidebar > ul > li:nth-child(2):hover {
+.left-menu > li:nth-child(1)>a:hover,
+.left-menu > li:nth-child(2)>a:hover {
     padding: 9px 0 11px 34px;
 }
 
-.sidebar > ul > li:nth-child(3):hover {
+.left-menu > li:nth-child(3)>a:hover {
     padding: 9px 0 12px 34px;
 }
 
-.sidebar > ul > li:nth-child(4):hover {
+.left-menu > li:nth-child(4)>a:hover {
     padding: 9px 0 11px 34px;
 }
 
-.sidebar > ul > li:nth-child(5):hover {
+.left-menu > li:nth-child(5)>a:hover {
     padding: 9px 0 14px 34px;
 }
 
-.sidebar > ul > li:nth-child(6):hover {
+.left-menu > li:nth-child(6)>a:hover {
     padding: 9px 0 12px 34px;
 }
 
@@ -201,49 +221,58 @@ body {
     background: #e1e1e1;
 }
 
-.footer > ul {
+.navigation-bottom {
+    display: inline-block;
     margin: 0;
     padding: 0;
 }
 
-.footer > ul >li {
+.navigation-bottom >li {
     display: inline-block;
+}
+
+.navigation-bottom >li>a {
+    display: block;
+    color: #2c2c2c;
+    font-family: Open Sans;
+    font-size: 13px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navigation-bottom > li:nth-child(1)>a {
+    padding: 9px 72px 11px 24px;
+}
+
+.navigation-bottom > li:nth-child(2)>a {
+    padding: 9px 30px 11px 15px;
+}
+
+.navigation-bottom > li:nth-child(3)>a {
+    padding: 9px 64px 11px 60px;
+}
+
+.navigation-bottom > li:nth-child(4)>a {
+    padding: 9px 30px 11px 26px;
+}
+
+.navigation-bottom > li>a:hover {
+    text-decoration: underline;
+}
+
+.foot {
+    display: inline-block;
+    margin-right: 0;
+    padding: 9px 25px 11px 65px;
+    float: right;
     color: #2c2c2c;
     font-family: Open Sans;
     font-size: 13px;
     list-style: none;
 }
 
-.footer > ul > li:nth-child(1) {
-    padding: 9px 72px 11px 24px;
-}
 
-.footer> ul > li:nth-child(2) {
-    padding: 9px 30px 11px 15px;
-}
 
-.footer> ul > li:nth-child(3) {
-    padding: 9px 64px 11px 60px;
-}
 
-.footer > ul > li:nth-child(4) {
-    padding: 9px 30px 11px 26px;
-}
-
-.footer > ul > li:nth-child(5) {
-    margin-right: 0;
-    padding: 9px 25px 11px 65px;
-    float: right;
-}
-
-.footer > ul >li:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.footer > ul >li:nth-child(5):hover {
-    text-decoration: none;
-    cursor: default;
-}
 
 
