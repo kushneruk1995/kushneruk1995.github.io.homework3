@@ -16,148 +16,74 @@ body {
     background: #fff;
 }
 
-.logo img {
+.logo {
     padding: 50px 50px 36px 46px;
 }
 
-.menu {
+.navigation {
     width: 966px;
+    display: block;
     margin: 0 auto;
     background: #535252;
 }
 
-.navigation {
-    margin: 0;
-    padding: 0;
-}
-
-.navigation > li {
+.navigation li {
     display: inline-block;
-    margin: 0;
-    padding: 0;
 }
 
-.navigation > li>a {
-    display: block;
+.navigation  li a {
+    display: inline-block;
+    padding: 10px 30px 11px 20px;
     color: #fff;
     font-family: Open Sans;
     font-size: 14px;
-    list-style: none;
-    text-decoration: none;
 }
 
-.navigation > li>a {
-    padding: 10px 30px 11px 20px;
-}
-
-.navigation>li>a:hover {
+.navigation li a:hover {
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
+    padding: 10px 29px 11px 19px;
     background: #353535;
-    cursor: pointer;
 }
 
-.navigation > li>a:hover {
-    padding: 10px 29px 11px 19px;
-    cursor: pointer;
-}
-
-.navigation > li>a:hover {
-    padding: 10px 29px 11px 19px;
-    cursor: pointer;
-}
-
-.sidebar {
+.left-menu {
+    display: block;
     width: 240px;
     margin-top: 40px;
     margin-left: 47px;
     float: left;
+    border-bottom: 1px solid #c8c8c8;
 }
 
-.left-menu {
-    margin: 0;
-    padding: 0;
-}
-
-.left-menu > li {
+.left-menu  li {
     display: block;
-    margin: 0;
-    padding: 0;
     border-top: 1px solid #c8c8c8;
     border-right: 1px solid #c8c8c8;
     border-left: 1px solid #c8c8c8;
 }
 
-.left-menu > li >a {
+.left-menu  li a {
     display: block;
-    padding: 11px 0 9px 23px;
     color: #656363;
     font-family: Open Sans;
     font-size: 13.33px;
-    list-style: none;
-    text-decoration: none;
+    padding: 9px 0 11px 22px;
 }
 
-.left-menu > li:nth-child(3)>a {
-    padding-bottom: 10px;
-}
-
-.left-menu > li:nth-child(4)>a {
-    padding-top: 9px;
-    padding-bottom: 11px;
-    padding-left: 22px;
-}
-
-.left-menu > li:nth-child(5)>a {
-    padding-bottom: 12px;
-    padding-left: 22px;
-}
-
-.left-menu > li:nth-child(6)>a {
-    padding-top: 9px;
-    padding-bottom: 12px;
-    padding-left: 22px;
-    border-bottom: 1px solid #c8c8c8;
-}
-
-.left-menu >li>a:hover {
+.left-menu li a:hover {
     padding-top: 9px;
     padding-left: 23px;
     background: #f9f9f9;
     color: #2c2c2c;
-    cursor: pointer;
-}
-
-.left-menu > li:nth-child(1)>a:hover,
-.left-menu > li:nth-child(2)>a:hover {
-    padding: 9px 0 11px 34px;
-}
-
-.left-menu > li:nth-child(3)>a:hover {
-    padding: 9px 0 12px 34px;
-}
-
-.left-menu > li:nth-child(4)>a:hover {
-    padding: 9px 0 11px 34px;
-}
-
-.left-menu > li:nth-child(5)>a:hover {
-    padding: 9px 0 14px 34px;
-}
-
-.left-menu > li:nth-child(6)>a:hover {
-    padding: 9px 0 12px 34px;
 }
 
 .content {
     width: 720px;
-    margin: 40px 50px 10px 0;
+    margin: 40px 50px 0 0;
     float: right;
 }
 
 .content .img {
-    width: 676px;
-    height: 398px;
     margin: 0 auto;
     margin-left: 44px;
     border: 1px solid #c8c8c8;
@@ -169,8 +95,6 @@ body {
 }
 
 .content .info {
-    width: 720px;
-    margin-left: 0;
     color: #2c2c2c;
     font-family: Open Sans;
     font-size: 13.33px;
@@ -178,58 +102,47 @@ body {
 
 .content .info p {
     margin-top: 35px;
-    margin-bottom: 63px;
     margin-left: 68px;
     line-height: 1.5;
+}
+
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: table;
 }
 
 .footer {
     width: 966px;
     margin: 0 auto;
-    margin-top: 190px;
-    clear: both;
     background: #e1e1e1;
 }
 
 .navigation-bottom {
     display: inline-block;
-    margin: 0;
-    padding: 0;
 }
 
-.navigation-bottom >li {
+.navigation-bottom li {
     display: inline-block;
 }
 
-.navigation-bottom >li>a {
+.navigation-bottom li a {
     display: block;
+    padding: 9px 30px 11px 26px;
     color: #2c2c2c;
     font-family: Open Sans;
     font-size: 13px;
-    list-style: none;
-    text-decoration: none;
 }
 
-.navigation-bottom > li>a {
-    padding: 9px 30px 11px 26px;
-}
-
-.navigation-bottom > li>a:hover {
+.navigation-bottom li a:hover {
     text-decoration: underline;
 }
 
 .foot {
     display: inline-block;
-    margin-right: 0;
     padding: 9px 25px 11px 65px;
     float: right;
     color: #2c2c2c;
     font-family: Open Sans;
     font-size: 13px;
-    list-style: none;
 }
-
-
-
-
-
